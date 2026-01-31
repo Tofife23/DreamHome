@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome - Snový Domov</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="javascript.js">    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">DreamHome</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#domů">Domů</a></li>
+                <li><a href="#o-nas">O nás</a></li>
+                <li><a href="#sluzby">Služby</a></li>
+                <li><a href="#realizace">Realizace</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slide active">
+            <video autoplay muted loop playsinline>
+                <source src="img/video1.mp4" type="video/mp4">
+            </video>
+            <div class="slide-content">
+                <h1>Vítejte na stránce<br><span class="highlight">DreamHome</span></h1>
+                <p>Snový domov</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <video muted loop playsinline>
+                <source src="img/video2.mp4" type="video/mp4">
+            </video>
+            <div class="slide-content">
+                <h1>Hledáte-li dům<br><span class="highlight">ke koupi</span></h1>
+                <p>Tak vám nepomůžeme.<br>Hotové domy neprodáváme.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <video muted loop playsinline>
+                <source src="img/video3.mp4" type="video/mp4">
+            </video>
+            <div class="slide-content">
+                <h1>My spolu s klienty<br><span class="highlight">tvoříme</span></h1>
+                <p>Snový domov</p>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <div class="slider-arrow prev">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="slider-dots">
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="1"></div>
+                <div class="dot" data-slide="2"></div>
+            </div>
+            <div class="slider-arrow next">
+                <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M9 18L15 12L9 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="o-nas">
+        <div class="about-content">
+            <div class="subtitle">O nás</div>
+            <h2>Vytváříme domovy vašich snů</h2>
+            <p>DreamHome není jen firma stavící domy. Jsme tým architektů, designérů a stavitelů, kteří společně s vámi tvoří místo, kde budete žít svůj život.</p>
+            <p>Každý projekt je pro nás jedinečný příběh. Nasloucháme vašim přáním, chápeme vaše potřeby a přetváříme je v realitu, která překonává očekávání.</p>
+            <p>S více než 15 lety zkušeností v oboru víme, že nejdůležitější není jen dokonalá realizace, ale cesta, kterou s vámi společně projdeme.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="DreamHome interiér">
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="realizace">
+        <div class="section-header">
+            <h2>Naše Realizace</h2>
+            <p>Prohlédněte si výběr z našich dokončených projektů</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600" alt="Moderní vila">
+                <div class="gallery-overlay">
+                    <h3>Moderní vila</h3>
+                    <p>Praha - Troja</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600" alt="Rodinný dům">
+                <div class="gallery-overlay">
+                    <h3>Rodinný dům</h3>
+                    <p>Brno - Žabovřesky</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600" alt="Luxury residence">
+                <div class="gallery-overlay">
+                    <h3>Luxury Residence</h3>
+                    <p>Karlovy Vary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="kontakt">
+        <div class="section-header">
+            <h2>Kontaktujte Nás</h2>
+            <p>Pojďme spolu vytvořit váš snový domov</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Kde nás najdete</h3>
+                <div class="contact-item">
+                    <h4>Adresa</h4>
+                    <p>DreamHome s.r.o.<br>Příkladová 123<br>110 00 Praha 1</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Telefon</h4>
+                    <p>+420 123 456 789</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Email</h4>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9b0b7bfb699bdabbcb8b4b1b6b4bcf7baa3">[email&#160;protected]</a></p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <input type="text" placeholder="Vaše jméno" required>
+                    <input type="email" placeholder="Váš email" required>
+                    <input type="tel" placeholder="Telefon">
+                    <textarea placeholder="Vaše zpráva" required></textarea>
+                    <button type="submit" class="submit-btn">Odeslat zprávu</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Footer About -->
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <div class="footer-logo-icon"></div>
+                    <span class="footer-logo-text">DreamHome</span>
+                </div>
+                <p>Vytváříme jedinečné domovy, které překonávají očekávání. S individuálním přístupem a více než 15 lety zkušeností přetváříme vaše sny v realitu.</p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Rychlé odkazy</h4>
+                <ul class="footer-links">
+                    <li><a href="#domů">Domů</a></li>
+                    <li><a href="#o-nas">O nás</a></li>
+                    <li><a href="#sluzby">Služby</a></li>
+                    <li><a href="#realizace">Realizace</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h4>Kontakt</h4>
+                <ul class="contact-info-footer">
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        <span>Příkladová 123<br>110 00 Praha 1</span>
+                    </li>
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <span>+420 123 456 789</span>
+                    </li>
+                    <li>
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <span>info@dreamhome.cz</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 DreamHome s.r.o. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+</html>
